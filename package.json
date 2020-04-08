@@ -4,13 +4,14 @@
   "private": true,
   "description": "pluralsite tutorial",
   "scripts": {
-    "start": "http-server -c-1 -p 8000",
+    "start": "http-server -c-1 -p 8005",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "requirejs": "^2.3.6"
+    "requirejs": "^2.3.6",
+    "systemjs": "0.21.4"
   },
   "devDependencies": {
     "http-server": "^0.12.1"

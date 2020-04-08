@@ -1,23 +1,17 @@
-define([], function() {
+var playerName = '';
 
-  var playerName = '';
+function logPlayer() {
+    console.log(`The current player is ${playerName}`);
+}
 
-  function logPlayer() {
-      console.log(`The current player is ${playerName}`);
-  }
+function setName(newName) {
+    playerName = newName;
+}
 
-  function setName(newName) {
-      playerName = newName;
-  }
+function getName() {
+    return playerName;
+}
 
-  function getName() {
-      return playerName;
-  }
-
-  return {
-    logPlayer,
-    setName,
-    getName
-  };
-
-});
+exports.logPlayer = logPlayer;
+exports.setName = setName;
+exports.getName = getName;
