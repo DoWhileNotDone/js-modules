@@ -1,15 +1,15 @@
-const player = require('./player.js');
-const game = require('./game.js');
+import assignPlayerName from './player.js';
+import * as game from './game.js';
 
 console.log(`Starting Game`);
 
 document.getElementById('startGame').addEventListener('click', function() {
-  player.setName(document.getElementById('playername').value);
+  assignPlayerName(document.getElementById('playername').value);
   game.printGame();
 });
 
 document.getElementById('calculate').addEventListener('click', function() {
-  player.setName(document.getElementById('playername').value);
+  assignPlayerName(document.getElementById('playername').value);
   game.calculateScore();
 });
 

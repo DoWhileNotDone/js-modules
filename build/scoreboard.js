@@ -1,3 +1,9 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
 var results = []; // array to store result of every game
 
 function addResult(newResult) {
@@ -21,7 +27,5 @@ function updateScoreboard() {
     scoresElement.innerHTML = output;
 }
 
-export {
-  addResult,
-  updateScoreboard
-};
+exports.addResult = addResult;
+exports.updateScoreboard = updateScoreboard;
